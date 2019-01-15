@@ -1,0 +1,16 @@
+[package]
+name = "tetris"
+version = "0.1.0"
+authors = ["Joel <joel.macaluso@gmail.com>"]
+edition = "2018"
+
+[lib]
+name="tetris_emulator"
+path="src/lib.rs"
+
+[dependencies]
+sdl2 = "0.30.0"
+rand = "*"
+
+[features]
+default = ["sdl2/image"]
